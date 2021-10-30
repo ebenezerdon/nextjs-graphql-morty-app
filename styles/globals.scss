@@ -1,0 +1,72 @@
+html,
+body {
+  background: #000000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  border-bottom: 1px solid #cdcdcd;
+  padding: 1.7rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: oblique;
+
+  span {
+    color: #FF1493FF;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  margin: 5rem 15rem;
+
+  .card {
+    border: 1px solid #FF1493FF;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      border-color: #5353ff;
+      transform: rotate(3deg);
+    }
+
+    .image {
+      border-radius: 15px;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      margin-top: unset;
+      margin-bottom: 1.5rem;
+      color: #aaaaaa;
+    }
+
+    .location {
+      font-style: italic;
+      color: #aaaaaa;
+    }
+  }
+}
