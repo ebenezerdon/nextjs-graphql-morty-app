@@ -4,8 +4,6 @@ import client from '../apolloClient'
 import { GET_ALL_CHARACTERS } from '../queries'
 
 export default function Home({ characters }) {
-  // const { loading, error, data } = useQuery(GET_ALL_CHARACTERS)
-
   return (
     <div>
       <Head>
@@ -29,29 +27,7 @@ export default function Home({ characters }) {
 }
 
 export const getStaticProps = async () => {
-  // const { data } = await client.query({
-  //   query: gql`
-  //       query Character {
-  //           characters {
-  //               results {
-  //                   id
-  //                   name
-  //                   image
-  //                   status
-  //                   species
-  //                   location {
-  //                       name
-  //                   }
-  //               }
-  //           }
-  //       }
-  //   `
-  // })
-
   const { data } = await client.query({ query: GET_ALL_CHARACTERS })
-
-  console.log('====><><><><><><><><><><><><><><>-==-===<>')
-  console.log('====>', data)
 
   return {
     props: {
