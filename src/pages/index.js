@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/Card'
-import client from '../apolloClient'
+import client from '../apolloConfig'
 import { GET_ALL_CHARACTERS } from '../queries'
 
 export default function Home({ characters }) {
