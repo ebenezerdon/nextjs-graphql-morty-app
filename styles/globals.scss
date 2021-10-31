@@ -33,7 +33,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
-  margin: 5rem 15rem;
+  margin: 5rem 15rem 1rem 15rem;
 
   .card {
     border: 1px solid #FF1493FF;
@@ -67,6 +67,28 @@ a {
     .location {
       font-style: italic;
       color: #aaaaaa;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: unset;
+  margin-bottom: 3rem;
+
+  button {
+    background: unset;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #FF1493FF;
+    border-radius: 10px;
+    padding: 0.5rem 0.9rem;
+    transition: background 0.5s ease;
+
+    &:hover {
+      background: #FF1493FF;
     }
   }
 }
