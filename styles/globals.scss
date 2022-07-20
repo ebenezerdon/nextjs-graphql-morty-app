@@ -1,11 +1,11 @@
 html,
 body {
-  background: #000000;
-  color: #fff;
+  background: #f2f2f2;
+  color: #1c1c1c;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
@@ -18,14 +18,13 @@ a {
 }
 
 .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.55rem;
   border-bottom: 1px solid #cdcdcd;
   padding: 1.7rem 4rem;
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-style: oblique;
 
   span {
-    color: #FF1493FF;
+    color: #ff1493ff;
   }
 }
 
@@ -44,17 +43,18 @@ a {
   }
 
   .card {
-    border: 1px solid #FF1493FF;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     padding: 1rem;
     margin-bottom: 1rem;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: all 0.3s ease;
 
     &:hover {
-      border-color: #5353ff;
-      transform: rotate(3deg);
+      transform: scale(1.07);
+      z-index: 1;
     }
 
     .image {
@@ -69,12 +69,12 @@ a {
     .status {
       margin-top: unset;
       margin-bottom: 1.5rem;
-      color: #aaaaaa;
+      color: #919191;
     }
 
     .location {
       font-style: italic;
-      color: #aaaaaa;
+      color: #919191;
     }
   }
 }
@@ -85,18 +85,18 @@ footer {
   margin-bottom: 3rem;
 
   button {
-    background: unset;
+    background: #000;
     color: #fff;
     cursor: pointer;
     margin-right: 1rem;
     font-size: 1.2rem;
-    border: 1px solid #FF1493FF;
+    border: unset;
     border-radius: 10px;
     padding: 0.5rem 0.9rem;
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
 
     &:hover {
-      background: #FF1493FF;
+      transform: scale(1.1);
     }
   }
 }
