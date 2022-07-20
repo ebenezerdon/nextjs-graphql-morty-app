@@ -1,3 +1,4 @@
+import React from 'react'
 import client from '../apolloConfig'
 import { GET_ALL_CHARACTERS } from '../queries'
 import Characters from '../components/Characters'
@@ -11,7 +12,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      characters: data?.characters
-    }
+      characters: data?.characters,
+    },
   }
 }
