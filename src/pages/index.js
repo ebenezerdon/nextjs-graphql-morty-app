@@ -10,22 +10,23 @@ export default function Home() {
     <div>
       <Head>
         <title>Morty GraphQL | Next.js</title>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <div className="title"><span>Next/GraphQL </span>Rick and Morty Character App</div>
-        {loading && (<p>Loading...</p>)}
-        {error && (<p>Error fetching data...</p>)}
+        <div className="title">
+          <span>Next/GraphQL </span>Rick and Morty Character App
+        </div>
+        {loading && <p>Loading...</p>}
+        {error && <p>Error fetching data...</p>}
         <div className="row">
-          {data?.characters?.results.map(character =>
-            <Card character={character} key={character.id}/>
-          )}
+          {data?.characters?.results.map((character) => (
+            <Card character={character} key={character.id} />
+          ))}
         </div>
       </main>
 
-      <footer>
-      </footer>
+      <footer></footer>
     </div>
   )
 }
