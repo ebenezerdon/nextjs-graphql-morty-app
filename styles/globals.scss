@@ -34,11 +34,11 @@ a {
   grid-column-gap: 2rem;
   margin: 5rem 15rem 1rem 15rem;
 
-  @media screen and(max-width: 785px) {
+  @media screen and (max-width: 785px) {
     display: unset;
   }
 
-  @media screen and(max-width: 1190px) {
+  @media screen and (max-width: 1190px) {
     grid-template-columns: 1fr 1fr;
   }
 
